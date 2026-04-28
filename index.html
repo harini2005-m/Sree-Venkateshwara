@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admissions Open 2026-27 | SV College KR Puram</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  color: #38bdf8;
+  margin-top: 10px;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* SECTION */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 280px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(56,189,248,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+  padding: 0 10px 15px;
+}
+
+/* FLOAT ANIMATION */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* CONTACT */
+.contact {
+  background: #0f172a;
+  padding: 40px 20px;
+}
+
+.contact p {
+  margin: 8px 0;
+  opacity: 0.85;
+}
+
+/* MAP */
+.map {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Admissions Open 2026 - 27</h1>
+    <h2>Sree Venkateshwara College</h2>
+    <p>KR Puram, Bengaluru - 36</p>
+    <p>BCA | BBA | BCOM</p>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Enquire Now
+    </button>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Our College</h2>
+  <p style="max-width:800px;margin:auto;opacity:0.8;">
+    We provide high-quality education in Science, Commerce & Management with modern infrastructure,
+    experienced faculty, and strong placement support in Bengaluru.
+  </p>
+</div>
+
+<!-- COURSES -->
+<div class="section">
+  <h2>Courses Offered</h2>
+
+  <div class="cards">
+
+    <div class="card float">
+      <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0">
+      <h3>BCA</h3>
+      <p>Computer Applications, Programming, AI & Software Development</p>
+    </div>
+
+    <div class="card float">
+      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
+      <h3>BBA</h3>
+      <p>Business Management, Marketing, HR & Entrepreneurship</p>
+    </div>
+
+    <div class="card float">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+      <h3>BCOM</h3>
+      <p>Accounting, Finance, Taxation, Banking & Commerce Studies</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact" id="contact">
+  <h2>Contact & Admission Office</h2>
+  <p>📍 KR Puram, Bengaluru - 36, Karnataka</p>
+  <p>📞 Phone: +91 98765 43210</p>
+  <p>📧 Email: admissions@svcollege.edu</p>
+
+  <button class="btn"
+    onclick="window.open('https://www.google.com/maps/place/KR+Puram,+Bengaluru','_blank')">
+    View on Google Maps
+  </button>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps?q=KR%20Puram%20Bengaluru&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+<footer>
+  © 2026 Sree Venkateshwara College of Science & Management Studies | KR Puram, Bengaluru
+</footer>
+
+</body>
+</html>
